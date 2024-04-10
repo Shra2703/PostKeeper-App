@@ -5,10 +5,10 @@ import "./styles.css";
 function App() {
   return (
     <>
-     <PostkeeperContext>
-      <Navbar/>
-      <Home/>
-     </PostkeeperContext>
+      <PostkeeperContext>
+        <Navbar />
+        <Home />
+      </PostkeeperContext>
     </>
   );
 }

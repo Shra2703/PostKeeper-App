@@ -13,12 +13,20 @@ function PostkeeperContext({ children }) {
 
   const isPostSaved = (id) => {
     let ans = mySavedPost.find((post) => post.id === id);
+    console.log( ans)
     return ans;
   };
 
   const setSavedPost = (post) => {
     let ans = isPostSaved(post.id);
-    if (ans) alert("Post Alredy Saved!!!");
+    // if (ans) alert("Post Alredy Saved!!!");
+    if (ans) {
+      let arr = mySavedPost.filter((myPost) => myPost.id != post.id);
+      // console.log("for delete")
+      // console.log(arr);
+      setMysavedPost([...arr]);
+      // console.log(mySavedPost)
+    } 
     else setMysavedPost((prev) => [post, ...prev]);
   };
 
