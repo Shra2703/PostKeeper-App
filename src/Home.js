@@ -13,7 +13,7 @@ function Home() {
           <img
             src={
               isPostSaved(p.id)
-                ? "https://files.codingninjas.in/bookmark-26237.png"
+                ? "https://cdn-icons-png.flaticon.com/512/64/64022.png"
                 : "https://cdn-icons-png.flaticon.com/512/102/102279.png"
             }
             alt=""
